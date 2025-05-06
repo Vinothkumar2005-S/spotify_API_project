@@ -32,7 +32,7 @@ from spotify_tracks;
 SELECT 
 	case
 		WHEN popularity >=80 THEN "high popularity"
-        		WHEN popularity >=50 THEN "popularity"
+        	WHEN popularity >=50 THEN "popularity"
 		ELSE "less popularity"
     	END as popularity_tracks ,
     count(*) as count_of_tracks 
