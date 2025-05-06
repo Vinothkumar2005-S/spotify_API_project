@@ -53,15 +53,3 @@ plt.ylabel('value')
 plt.show()
 
 
-engine_mysql = create_engine("mysql+pymysql://root:2005@127.0.0.1:3306/spotify_db")
-
-try:
-    create_engine
-    print("engine sucessfully active")
-except:
-    print("unable to connect")
-
-df.to_sql('spotify_db',con=engine_mysql,if_exists='append' , index= False)
-
-
-## file handling 
