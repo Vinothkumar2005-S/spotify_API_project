@@ -1,4 +1,4 @@
-import mysql.connector
+
 from spotipy import SpotifyClientCredentials
 import pandas as pd 
 import spotipy
