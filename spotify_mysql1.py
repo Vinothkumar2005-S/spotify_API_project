@@ -1,7 +1,7 @@
 import re
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
-import mysql.connector
+import pymysql
 
 # Set up Spotify API credentials
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
@@ -18,7 +18,7 @@ db_config = {
 }
 
 # Connect to the database
-connection = mysql.connector.connect(**db_config)
+connection = pymysql.connect(**db_config)
 cursor = connection.cursor()
 
 # Create table if it doesn't exist
